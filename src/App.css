@@ -31,3 +31,253 @@
     transform: rotate(360deg);
   }
 }
+
+#loanC {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50%;
+  height: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.507);
+  background: #ffefba; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #ffefba
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #ffefba
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#lti {
+  width: 50%;
+}
+#cardO {
+  background: #ffefba; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #ffefba
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #ffefba
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  position: absolute;
+  width: 45%;
+  right: 10px;
+  height: 330px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+#cardO :hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+#loanC1 {
+  position: absolute;
+  width: 45%;
+  left: 10px;
+}
+#navbar {
+  z-index: 99 !important;
+  position: fixed;
+  width: 100%;
+  background: #f12711; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f5af19,
+    #f12711
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f5af19,
+    #f12711
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#Page_container {
+  left: 10%;
+  top: 8%;
+  position: relative;
+  width: 85%;
+  height: 700px;
+  background: #c31432; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #240b36, #c31432);
+  background: linear-gradient(to right, #240b36, #c31432);
+  border-radius: 20px;
+}
+#root {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(217, 222, 224);
+}
+#root1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #c31432; /* fallback for old browsers */
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#profileCard {
+  box-shadow: 0 4px 8px 0 #330101;
+  top: 5%;
+  left: 5%;
+  border-bottom-right-radius: 50px;
+}
+#profileCard :hover {
+  box-shadow: 0 4px 16px 0 rgb(204, 4, 4);
+}
+#linkedinB {
+  z-index: 98 !important;
+  position: fixed;
+  left: 15px;
+  top: 100px;
+
+  height: 50px;
+}
+#linkedinB:hover,
+#gitHubB:hover,
+#varsityTutorsB:hover {
+  transform: scale(1.1);
+}
+#gitHubB {
+  z-index: 98 !important;
+  position: fixed;
+  left: 15px;
+  top: 160px;
+
+  height: 50px;
+}
+#varsityTutorsB {
+  z-index: 98 !important;
+  position: fixed;
+  left: 15px;
+  top: 220px;
+  height: 50px;
+}
+#pdiv {
+  position: absolute;
+  top: 100px;
+  left: 150px;
+  width: 90%;
+}
+#expCp {
+  height: 150px;
+}
+#footer {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  bottom: 0px;
+  background: #f12711; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f5af19,
+    #f12711
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f5af19,
+    #f12711
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#nameB {
+  font-family: "Times New Roman", Times, serif;
+  position: absolute;
+  text-align: center;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  left: 45%;
+  top: 5%;
+  width: 400px;
+  opacity: 0.6;
+}
+#lang {
+  position: absolute;
+  text-align: center;
+  top: 70px;
+  left: 30%;
+  width: 60%;
+  padding: 20px;
+  margin: 20px;
+}
+#aboutme {
+  position: absolute;
+  left: 40%;
+  top: 200px;
+  color: white;
+}
+#longC {
+  width: 50px;
+  background-color: black;
+}
+#CM {
+  position: relative;
+  top: 100px;
+  text-align: center;
+  color: white;
+  box-shadow: white;
+}
+#CM:hover {
+  box-shadow: blue;
+}
+#CMP {
+  position: relative;
+  width: 100px;
+  text-align: center;
+  color: white;
+  box-shadow: white;
+}
+#CME {
+  position: relative;
+  width: 100px;
+  text-align: center;
+  color: white;
+  box-shadow: white;
+}
+#con {
+  position: relative;
+  top: 100px;
+}
+#phoneN {
+  position: relative;
+  color: black;
+}
+#email {
+  position: relative;
+  color: black;
+}
+#selectRow {
+  position: relative;
+  left: 10%;
+  right: 10%;
+  top: 5%;
+}
+#carTable {
+  position: absolute;
+  color: white;
+  background-color: black;
+  width: 80%;
+  left: 10%;
+  right: 10%;
+  text-align: center;
+  justify-self: center;
+  top: 20%;
+}
