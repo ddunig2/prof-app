@@ -18,7 +18,7 @@ class Navigation extends Component {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/#my_cars">My Cars</Nav.Link>
+            <Nav.Link href="/#/my_cars">My Cars</Nav.Link>
             <Nav.Link href="/#loanCalculator">Loan Calculator</Nav.Link>
             <NavDropdown title="Resume" id="basic-nav-dropdown">
               <NavDropdown.Item href="/#experience">
