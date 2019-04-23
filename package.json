@@ -2,11 +2,13 @@
   "name": "prof-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ddunig2.github.io/prof-app",
   "dependencies": {
     "@types/mysql": "^2.15.5",
     "async": "file:node_modules/async",
     "boostrap": "^2.0.0",
     "bootstrap": "^4.3.1",
+    "gh-pages": "^2.0.1",
     "mssql": "^5.0.3",
     "mysql": "github:mysqljs/mysql",
     "node.js": "0.0.0",
@@ -24,6 +26,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
