@@ -5,17 +5,15 @@ class ProfileCard extends Component {
   state = {};
   render() {
     return (
-      <Card bg="warning" style={{ width: "18rem" }} id="profileCard">
-        <Card.Img variant="top" src="profile.jpg" />
-        <Card.Body>
-          <Card.Title>St. Thomas Aquinas College</Card.Title>
-          <Card.Text>
-            Year: Junior
-            <br />
-            GPA: 3.5
-          </Card.Text>
-        </Card.Body>
-      </Card>
+      <div id="profileCard1">
+        <Card bg="warning" id="profileCard">
+          <Card.Img variant="top" src="profile.jpg" id="profileImg" />
+          <Card.Body>
+            <Card.Title>St. Thomas Aquinas College</Card.Title>
+            <Card.Text>GPA: 3.61</Card.Text>
+          </Card.Body>
+        </Card>
+      </div>
     );
   }
 }

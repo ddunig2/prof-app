@@ -15,7 +15,7 @@ class Side extends Component {
         <Row>
           <Col xs={6} md={4}>
             <a href="https://github.com/ddunig2">
-              <Image src="gitHub2.png" roundedCircle id="gitHubB" />
+              <Image src="gitHub.png" roundedCircle id="gitHubB" />
             </a>
           </Col>
         </Row>

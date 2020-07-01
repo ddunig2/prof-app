@@ -89,13 +89,13 @@
   background: #f12711; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #f5af19,
-    #f12711
+    #1f1f1f,
+    #8f8f8f
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #f5af19,
-    #f12711
+    #1f1f1f,
+    #8f8f8f
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 #Page_container {
@@ -103,7 +103,7 @@
   top: 8%;
   position: relative;
   width: 85%;
-  height: 700px;
+  height: 70%;
   background: #c31432; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #240b36, #c31432);
   background: linear-gradient(to right, #240b36, #c31432);
@@ -116,7 +116,8 @@
   background-color: rgb(217, 222, 224);
 }
 #root1 {
-  position: absolute;
+  overflow: auto;
+  position: relative;
   height: 100%;
   width: 100%;
   background: #c31432; /* fallback for old browsers */
@@ -133,11 +134,30 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+#nameB {
+  font-family: "Times New Roman", Times, serif;
+  position: absolute;
+  text-align: center;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  left: 45%;
+  top: 5%;
+  width: 30%;
+  opacity: 0.6;
+}
 #profileCard {
+  position: absolute;
   box-shadow: 0 4px 8px 0 #330101;
   top: 5%;
   left: 5%;
-  border-bottom-right-radius: 50px;
+  height: 80%;
+  width: 15%;
+}
+
+#profileImg {
+  width: 100%;
+  height: 70%;
 }
 #profileCard :hover {
   box-shadow: 0 4px 16px 0 rgb(204, 4, 4);
@@ -183,32 +203,31 @@
   position: absolute;
   text-align: center;
   width: 100%;
-  height: 100px;
-  bottom: 0px;
+  height: 100%;
   background: #f12711; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #f5af19,
-    #f12711
+    #1f1f1f,
+    #8f8f8f
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #f5af19,
-    #f12711
+    #1f1f1f,
+    #8f8f8f
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-#nameB {
-  font-family: "Times New Roman", Times, serif;
+#footer1 {
+  display: none;
+}
+
+#footer2 {
   position: absolute;
   text-align: center;
-  background-color: black;
-  border-radius: 10px;
-  color: white;
-  left: 45%;
-  top: 5%;
-  width: 400px;
-  opacity: 0.6;
+  width: 100%;
+  height: 7%;
+  bottom: 0px;
 }
+
 #lang {
   position: absolute;
   text-align: center;
@@ -280,4 +299,312 @@
   text-align: center;
   justify-self: center;
   top: 20%;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 700px) {
+  .App {
+    text-align: center;
+  }
+
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 40vmin;
+    pointer-events: none;
+  }
+
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  .App-link {
+    color: #61dafb;
+  }
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  #loanC {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50%;
+    height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.507);
+    background: #ffefba; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #ffffff,
+      #ffefba
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #ffffff,
+      #ffefba
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+  #lti {
+    width: 50%;
+  }
+  #cardO {
+    background: #ffefba; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #ffffff,
+      #ffefba
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #ffffff,
+      #ffefba
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    position: absolute;
+    width: 45%;
+    right: 10px;
+    height: 330px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  #cardO :hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  #loanC1 {
+    position: absolute;
+    width: 45%;
+    left: 10px;
+  }
+  #navbar {
+    z-index: 99 !important;
+    position: fixed;
+    width: 100%;
+    background: #f12711; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #1f1f1f,
+      #8f8f8f
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #1f1f1f,
+      #8f8f8f
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  #Page_container {
+    left: 5%;
+    top: 8%;
+    position: relative;
+    width: 90%;
+    height: 90%;
+    background: #c31432; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);
+    background: linear-gradient(to right, #240b36, #c31432);
+    border-radius: 20px;
+  }
+  #root {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(217, 222, 224);
+  }
+  #root1 {
+    position: absolute;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    background: #c31432; /* fallback for old browsers */
+    background: #232526; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #414345,
+      #232526
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #414345,
+      #232526
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  #nameB {
+    font-family: "Times New Roman", Times, serif;
+    position: relative;
+    text-align: center;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    left: 0%;
+    top: 5%;
+    width: 80%;
+    margin: 0 auto;
+    opacity: 0.6;
+  }
+  #profileCard1 {
+    box-shadow: 0 4px 8px 0 #330101;
+    position: relative;
+    text-align: center;
+    left: 0%;
+    top: 10%;
+    width: 80%;
+    height: 70%;
+    margin: 0 auto;
+  }
+  #profileCard {
+    box-shadow: 0 4px 8px 0 #330101;
+    position: relative;
+    text-align: center;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  #profileCard :hover {
+    box-shadow: 0 4px 16px 0 rgb(204, 4, 4);
+  }
+
+  #pdiv {
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    width: 90%;
+  }
+  #expCp {
+    height: 150px;
+  }
+
+  #lang {
+    position: relative;
+    text-align: center;
+    top: 25%;
+    left: 0%;
+    width: 90%;
+    padding: 5%;
+    height: 20%;
+    margin: 0 auto;
+  }
+  #aboutme {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    left: 0%;
+    width: 80%;
+    color: white;
+    margin: 0 auto;
+  }
+  #longC {
+    width: 50px;
+    background-color: black;
+  }
+
+  #footer2 {
+    display: none;
+  }
+
+  #footer1 {
+    display: block;
+    position: relative;
+    text-align: center;
+    width: 112.5%;
+    height: 10%;
+    top: 60%;
+    margin: 0 auto;
+    left: -7%;
+  }
+
+  #linkedinB {
+    z-index: 98 !important;
+    position: fixed;
+    left: 15px;
+    top: 100px;
+
+    height: 50px;
+  }
+  #linkedinB:hover,
+  #gitHubB:hover,
+  #varsityTutorsB:hover {
+    transform: scale(1.1);
+  }
+  #gitHubB {
+    z-index: 98 !important;
+    position: fixed;
+    left: 15px;
+    top: 160px;
+
+    height: 50px;
+  }
+  #varsityTutorsB {
+    z-index: 98 !important;
+    position: fixed;
+    left: 15px;
+    top: 220px;
+    height: 50px;
+  }
+  #CM {
+    position: relative;
+    top: 100px;
+    text-align: center;
+    color: white;
+    box-shadow: white;
+  }
+  #CM:hover {
+    box-shadow: blue;
+  }
+  #CMP {
+    position: relative;
+    width: 100px;
+    text-align: center;
+    color: white;
+    box-shadow: white;
+  }
+  #CME {
+    position: relative;
+    width: 100px;
+    text-align: center;
+    color: white;
+    box-shadow: white;
+  }
+  #con {
+    position: relative;
+    top: 100px;
+  }
+  #phoneN {
+    position: relative;
+    color: black;
+  }
+  #email {
+    position: relative;
+    color: black;
+  }
+  #selectRow {
+    position: relative;
+    left: 10%;
+    right: 10%;
+    top: 5%;
+  }
+  #carTable {
+    position: absolute;
+    color: white;
+    background-color: black;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+    text-align: center;
+    justify-self: center;
+    top: 20%;
+  }
 }

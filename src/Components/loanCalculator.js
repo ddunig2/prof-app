@@ -4,7 +4,7 @@ import {
   FormControl,
   Button,
   ButtonToolbar,
-  Card
+  Card,
 } from "react-bootstrap";
 import "../App.css";
 class LoanCalculator extends Component {
