@@ -12,7 +12,7 @@ class Navigation extends Component {
   state = {};
   render() {
     return (
-      <Navbar bg="dark" variant="dark" expand="lg" id="navbar">
+      <Navbar bg="dark" collapseOnSelect variant="dark" expand="lg" id="navbar">
         {/* <Navbar.Brand href={process.env.PUBLIC_URL}>
           Lugduni Desrosiers
         </Navbar.Brand> */}
