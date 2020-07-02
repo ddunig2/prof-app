@@ -10,9 +10,16 @@ class Projects extends Component {
     return (
       <div id="pdiv">
         <Row>
-          <Col xs={6} md={4}>
-            <Card style={{ width: "18rem" }} bg="secondary" text="white">
-              <Card.Header>Database Api</Card.Header>
+          <Col align="center">
+            <Card
+              style={{
+                width: "18rem",
+                margin: "2rem",
+              }}
+              bg="secondary"
+              text="white"
+            >
+              <Card.Header>Api</Card.Header>
               <Card.Img variant="top" src="golang.png" id="expCp" />
               <Card.Body>
                 <Card.Title>Go</Card.Title>
@@ -23,9 +30,13 @@ class Projects extends Component {
               </Card.Body>
             </Card>
           </Col>
-          <Col xs={6} md={4}>
+          <Col align="center">
             <a href="https://github.com/ddunig2/Translator">
-              <Card style={{ width: "18rem" }} bg="primary" text="white">
+              <Card
+                style={{ width: "18rem", margin: "2rem" }}
+                bg="primary"
+                text="white"
+              >
                 <Card.Header>Translator</Card.Header>
                 <Card.Img variant="top" src="translator.png" id="expCp" />
                 <Card.Body>
@@ -38,9 +49,13 @@ class Projects extends Component {
               </Card>
             </a>
           </Col>
-          <Col xs={6} md={4}>
+          <Col align="center">
             <a href="https://github.com/ddunig2/Loan-calculator">
-              <Card style={{ width: "18rem" }} bg="info" text="white">
+              <Card
+                style={{ width: "18rem", margin: "2rem" }}
+                bg="info"
+                text="white"
+              >
                 <Card.Header>Loan Calculator</Card.Header>
                 <Card.Img variant="top" src="loancalc2.png" id="expCp" />
                 <Card.Body>
@@ -55,9 +70,13 @@ class Projects extends Component {
           </Col>
         </Row>
         <Row>
-          <Col xs={6} md={4}>
+          <Col align="center">
             <a href="https://github.com/ddunig2/MonopolyProject">
-              <Card style={{ width: "18rem" }} bg="warning" text="white">
+              <Card
+                style={{ width: "18rem", margin: "2rem" }}
+                bg="warning"
+                text="white"
+              >
                 <Card.Header>Monopoly Game</Card.Header>
                 <Card.Img variant="top" src="mono.png" id="expCp" />
                 <Card.Body>
@@ -70,9 +89,13 @@ class Projects extends Component {
               </Card>
             </a>
           </Col>
-          <Col xs={6} md={4}>
+          <Col align="center">
             <a href="https://github.com/ddunig2/Tic-Tac-Toe-game">
-              <Card style={{ width: "18rem" }} bg="dark" text="white">
+              <Card
+                style={{ width: "18rem", margin: "2rem" }}
+                bg="dark"
+                text="white"
+              >
                 <Card.Header>Tic Toc Toe</Card.Header>
                 <Card.Img variant="top" src="ttt.png" id="expCp" />
                 <Card.Body>
@@ -84,8 +107,8 @@ class Projects extends Component {
               </Card>
             </a>
           </Col>
-          <Col xs={6} md={4}>
-            <Card style={{ width: "18rem" }} bg="danger">
+          <Col align="center">
+            <Card style={{ width: "18rem", margin: "2rem" }} bg="danger">
               <Card.Header>Flight Reservation System</Card.Header>
               <Card.Img variant="top" src="androidS2.png" id="expCp" />
               <Card.Body>

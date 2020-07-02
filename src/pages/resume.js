@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Resume extends Component {
   render() {
     return (
-      <div>
+      <div id="resume">
         <embed
           src="Resume.pdf#toolbar"
           type="application/pdf"

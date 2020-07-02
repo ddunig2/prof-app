@@ -10,8 +10,12 @@ class Experience extends Component {
     return (
       <div id="pdiv">
         <Row>
-          <Col xs={6} md={4}>
-            <Card style={{ width: "18rem" }} bg="secondary" text="white">
+          <Col align="center">
+            <Card
+              style={{ width: "18rem", margin: "2rem" }}
+              bg="secondary"
+              text="white"
+            >
               <Card.Header>Intern</Card.Header>
               <Card.Img variant="top" src="DOE.jpg" id="expCp" />
               <Card.Body>
@@ -23,8 +27,12 @@ class Experience extends Component {
               </Card.Body>
             </Card>
           </Col>
-          <Col xs={6} md={4}>
-            <Card style={{ width: "18rem" }} bg="primary" text="white">
+          <Col align="center">
+            <Card
+              style={{ width: "18rem", margin: "2rem" }}
+              bg="primary"
+              text="white"
+            >
               <Card.Header>Computer Science Tutor</Card.Header>
               <Card.Img variant="top" src="VTL.png" id="expCp" />
               <Card.Body>
@@ -36,8 +44,12 @@ class Experience extends Component {
               </Card.Body>
             </Card>
           </Col>
-          <Col xs={6} md={4}>
-            <Card style={{ width: "18rem" }} bg="danger" text="white">
+          <Col align="center">
+            <Card
+              style={{ width: "18rem", margin: "2rem" }}
+              bg="danger"
+              text="white"
+            >
               <Card.Header>Intern</Card.Header>
               <Card.Img variant="top" src="STAC.png" id="expCp" />
               <Card.Body>
