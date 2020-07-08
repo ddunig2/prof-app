@@ -1,16 +1,16 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Radium from 'radium'
+import React from "react";
+import PropTypes from "prop-types";
+import Radium from "radium";
 
-import Entry from './entry'
-import defaultConfig from './config'
+import Entry from "./entry";
+import defaultConfig from "./config";
 
 export class Timeline extends React.Component {
   constructor(props) {
-    super(props)
-    this.state = { twoSided: true }
-    this.onTwoSidedChange = this.onTwoSidedChange.bind(this)
-    this.componentWillReceiveProps(props)
+    super(props);
+    this.state = { twoSided: true };
+    this.onTwoSidedChange = this.onTwoSidedChange.bind(this);
+    this.componentWillReceiveProps(props);
   }
 
   /**
@@ -18,60 +18,63 @@ export class Timeline extends React.Component {
    */
   componentWillReceiveProps(newProps) {
     //eslint-disable-next-line no-unused-vars
-    const { children, ...config } = newProps // children are not config
+    const { children, ...config } = newProps; // children are not config
     this.mergedConfig = {
       ...defaultConfig,
       ...config,
-    }
+    };
   }
 
   componentWillMount() {
-    const { mediaWidthSmall } = this.mergedConfig
+    const { mediaWidthSmall } = this.mergedConfig;
     if (window && window.matchMedia) {
-      this.mqTwoSided = window.matchMedia(`(min-width: ${mediaWidthSmall}px)`)
-      this.mqTwoSided.addListener(this.onTwoSidedChange)
-      this.onTwoSidedChange(this.mqTwoSided)
+      this.mqTwoSided = window.matchMedia(`(min-width: ${mediaWidthSmall}px)`);
+      this.mqTwoSided.addListener(this.onTwoSidedChange);
+      this.onTwoSidedChange(this.mqTwoSided);
     }
   }
 
   componentWillUnmount() {
     if (this.mqTwoSided) {
-      this.mqTwoSided.removeListener(this.onTwoSidedChange)
+      this.mqTwoSided.removeListener(this.onTwoSidedChange);
     }
   }
 
   onTwoSidedChange(mq) {
-    this.setState({ twoSided: mq.matches })
+    this.setState({ twoSided: mq.matches });
   }
 
   render() {
-    const { children } = this.props
-    const { color, twoSidedOverlap } = this.mergedConfig
-    const twoSided = this.state.twoSided
-    let i = 0
+    const { children } = this.props;
+    const { color, twoSidedOverlap } = this.mergedConfig;
+    const twoSided = this.state.twoSided;
+    let i = 0;
 
     const styles = {
       base: {
-        textAlign: 'center',
-        paddingBottom: twoSided && twoSidedOverlap + 'px',
+        textAlign: "center",
+        paddingBottom: (twoSided && twoSidedOverlap) + 80 + "px",
         color: color,
-        overflow: 'hidden',
+        overflow: "hidden",
         [this.mqTwoSidedString]: {
-          marginBottom: twoSidedOverlap + 'px',
-        }
-      }
-    }
+          marginBottom: twoSidedOverlap + "px",
+        },
+      },
+    };
 
     return (
       <div style={[styles.base]}>
-        {React.Children.map(children, c =>
-          <Entry even={i++ % 2 === 0 && twoSided} config={this.mergedConfig}
-            icon={c.props.icon}>
+        {React.Children.map(children, (c) => (
+          <Entry
+            even={i++ % 2 === 0 && twoSided}
+            config={this.mergedConfig}
+            icon={c.props.icon}
+          >
             {c}
           </Entry>
-        )}
+        ))}
       </div>
-    )
+    );
   }
 }
 
@@ -107,6 +110,6 @@ Timeline.propTypes = {
   smallItemWidthPadding: PropTypes.number,
   itemPadding: PropTypes.number,
   evenItemOffset: PropTypes.number,
-}
+};
 
-export default Radium(Timeline)
+export default Radium(Timeline);

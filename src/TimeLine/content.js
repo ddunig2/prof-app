@@ -86,7 +86,7 @@ export class Content extends React.Component {
         bottom: "0",
         width: itemWidth + "px",
         padding: itemPadding + "px",
-        background: activeColor,
+        background: "transparent",
         visibility: animations ? "hidden" : null,
         opacity: animations ? 0 : 1,
         transition: animations ? "all .5s ease-in-out" : null,
@@ -94,7 +94,7 @@ export class Content extends React.Component {
           width: itemWidthMed + "px",
         },
         [mediaSmall]: {
-          width: `calc(100vw - ${
+          width: `calc(90vw - ${
             triangleWidth + circleWidth + smallItemWidthPadding
           }px)`,
         },
