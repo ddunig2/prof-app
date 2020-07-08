@@ -13,6 +13,7 @@
     "node.js": "0.0.0",
     "nodejs": "0.0.0",
     "php": "0.0.1",
+    "radium": "^0.26.0",
     "react": "^16.8.2",
     "react-bootstrap": "^1.0.0-beta.5",
     "react-dom": "^16.8.2",

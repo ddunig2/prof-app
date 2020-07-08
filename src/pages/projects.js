@@ -12,6 +12,7 @@ class Projects extends Component {
         <Row>
           <Col align="center">
             <Card
+              id="cardId"
               style={{
                 width: "18rem",
                 margin: "2rem",

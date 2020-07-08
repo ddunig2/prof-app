@@ -1,5 +1,8 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Row, Col, Card } from "react-bootstrap";
+import { StyleRoot } from "radium";
+import Timeline from "../TimeLine/timeline";
+import Footer from "../Components/footer";
 
 class Experience extends Component {
   constructor(props) {
@@ -9,6 +12,46 @@ class Experience extends Component {
   render() {
     return (
       <div id="pdiv">
+        <StyleRoot>
+          <Timeline animations={true}>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <time>October 2020</time>
+                  <h4>Incoming Software Engineer @Google</h4>
+                  <img src="google.png" alt="" width="90%" height="60%" />
+                </div>
+                <div class="flip-card-back">
+                  <h1>John Doe</h1>
+                  <p>Job descrition</p>
+                </div>
+              </div>
+            </div>
+            <div class="flipCard">
+              <div icon="'20">
+                <time>October 2020</time>
+                <h4>Incoming Software Engineer @Google</h4>
+                <img src="google.png" alt="" width="90%" height="30%" />
+              </div>
+            </div>
+            <div icon="'20">
+              <time>September 2018 - Current employer</time>
+              <h4>Computer Science Tutor @Varsity Tutors</h4>
+              <img src="VT.png" alt="" width="90%" height="30%" />
+            </div>
+            <div icon="'19">
+              <h4>Compuer Science Intern @Brookhaven National Laboratory</h4>
+              <img src="bnl.png" alt="" width="90%" height="30%"></img>
+            </div>
+            <div icon="'18">
+              <h4>Compuer Science Intern @Sant Thomas Aquinas College</h4>
+              <img src="STAC.png" alt="" width="90%" height="30%"></img>
+            </div>
+          </Timeline>
+        </StyleRoot>
+        <Footer></Footer>
+
+        {/*
         <Row>
           <Col align="center">
             <Card
@@ -62,7 +105,7 @@ class Experience extends Component {
             </Card>
             <br />
           </Col>
-        </Row>
+        </Row>*/}
       </div>
     );
   }

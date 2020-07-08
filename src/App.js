@@ -13,9 +13,6 @@ class App extends Component {
         <Navigation />
         <Side />
         <Main />
-        <div id="footer2">
-          <Footer />
-        </div>
       </div>
     );
   }
