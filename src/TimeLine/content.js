@@ -94,7 +94,7 @@ export class Content extends React.Component {
           width: itemWidthMed + "px",
         },
         [mediaSmall]: {
-          width: `calc(90vw - ${
+          width: `calc(100vw - ${
             triangleWidth + circleWidth + smallItemWidthPadding
           }px)`,
         },

@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <div id="root1">
         <Navigation />
-        <Side />
+        {/*<Side />*/}
         <Main />
       </div>
     );
