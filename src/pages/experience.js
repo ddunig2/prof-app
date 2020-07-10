@@ -13,7 +13,7 @@ class Experience extends Component {
     return (
       <div id="pdiv">
         <StyleRoot>
-          <Timeline animations={true}>
+          <Timeline id="timeline">
             <div class="flip-card" icon="'20">
               <div class="flip-card-inner">
                 <div class="flip-card-front">

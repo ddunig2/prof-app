@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { getPriority } from "os";
 
 class Footer extends Component {
   constructor(props) {

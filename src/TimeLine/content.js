@@ -9,6 +9,7 @@ export class Content extends React.Component {
   }
 
   areChildrenInView() {
+    console.log("we are in view");
     const rect = this.children.getBoundingClientRect();
     const vwHeight =
       window.innerHeight || document.documentElement.clientHeight;
@@ -32,6 +33,7 @@ export class Content extends React.Component {
   }
 
   onScroll() {
+    console.log("this here");
     const inView = this.areChildrenInView();
     this.props.onInView(inView);
   }

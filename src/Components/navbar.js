@@ -1,12 +1,5 @@
 import React, { Component } from "react";
-import {
-  Button,
-  Navbar,
-  Nav,
-  NavDropdown,
-  Form,
-  FormControl,
-} from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 
 class Navigation extends Component {
   state = {};
