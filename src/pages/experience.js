@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Row, Col, Card } from "react-bootstrap";
 import { StyleRoot } from "radium";
 import Timeline from "../TimeLine/timeline";
 import Footer from "../Components/footer";
@@ -73,62 +72,6 @@ class Experience extends Component {
           </Timeline>
         </StyleRoot>
         <Footer></Footer>
-
-        {/*
-        <Row>
-          <Col align="center">
-            <Card
-              style={{ width: "18rem", margin: "2rem" }}
-              bg="secondary"
-              text="white"
-            >
-              <Card.Header>Intern</Card.Header>
-              <Card.Img variant="top" src="DOE.jpg" id="expCp" />
-              <Card.Body>
-                <Card.Title>SULI</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col align="center">
-            <Card
-              style={{ width: "18rem", margin: "2rem" }}
-              bg="primary"
-              text="white"
-            >
-              <Card.Header>Computer Science Tutor</Card.Header>
-              <Card.Img variant="top" src="VTL.png" id="expCp" />
-              <Card.Body>
-                <Card.Title>Varsity Tutors</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col align="center">
-            <Card
-              style={{ width: "18rem", margin: "2rem" }}
-              bg="danger"
-              text="white"
-            >
-              <Card.Header>Intern</Card.Header>
-              <Card.Img variant="top" src="STAC.png" id="expCp" />
-              <Card.Body>
-                <Card.Title>STEM Camp</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-            <br />
-          </Col>
-        </Row>*/}
       </div>
     );
   }

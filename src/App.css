@@ -128,16 +128,14 @@ body {
 }
 #homeDiv {
   position: absolute;
-  height: 100%;
+  top: 10%;
   width: 100%;
-  background-color: rebeccapurple;
 }
 #Page_container {
   left: 10%;
-  top: 8%;
   position: relative;
   width: 85%;
-  height: 90%;
+  min-height: 670px;
   background: #0e0e0e60; /* fallback for old browsers */
   border-radius: 20px;
 }
@@ -160,18 +158,7 @@ body {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-#nameB {
-  font-family: "Times New Roman", Times, serif;
-  position: absolute;
-  text-align: center;
-  background-color: black;
-  border-radius: 10px;
-  color: white;
-  left: 45%;
-  top: 5%;
-  width: 30%;
-  opacity: 0.6;
-}
+
 #profileCard {
   position: absolute;
   box-shadow: 0 4px 8px 0 #330101;
@@ -272,10 +259,11 @@ body {
   transform: rotateY(180deg);
 }
 #footer {
-  position: absolute;
+  position: relative;
   text-align: center;
   width: 100%;
-  height: 7%;
+  height: 107px;
+  bottom: 0px;
   margin-top: 5%;
   background: #f12711; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -302,9 +290,20 @@ body {
   height: 7%;
   bottom: 0px;
 }
-
+#nameB {
+  font-family: "Times New Roman", Times, serif;
+  position: relative;
+  text-align: center;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  left: 45%;
+  top: 15px;
+  width: 30%;
+  opacity: 0.6;
+}
 #lang {
-  position: absolute;
+  position: relative;
   text-align: center;
   top: 10%;
   left: 30%;
@@ -313,16 +312,14 @@ body {
   margin: 20px;
 }
 #aboutme {
-  position: absolute;
-  left: 30%;
-  top: 25%;
+  position: relative;
   color: white;
-  margin: 2%;
+  margin: 3%;
+  left: 30%;
+  width: 60%;
+  padding: 2%;
 }
-#longC {
-  width: 50px;
-  background-color: black;
-}
+
 #CM {
   position: relative;
   top: 100px;
@@ -494,9 +491,10 @@ body {
     border-radius: 10px;
     color: white;
     left: 0%;
-    top: 5%;
+    top: 10px;
     width: 80%;
     margin: 0 auto;
+    margin-bottom: 20px;
     opacity: 0.6;
   }
   #profileCard1 {
@@ -531,10 +529,6 @@ body {
     width: 100%;
   }
 
-  #expCp {
-    height: 150px;
-  }
-
   #lang {
     position: relative;
     text-align: center;
@@ -555,54 +549,6 @@ body {
     margin: 0 auto;
   }
 
-  #longC {
-    width: 50px;
-    background-color: black;
-  }
-
-  #footer2 {
-    display: none;
-  }
-
-  #footer1 {
-    display: block;
-    position: relative;
-    text-align: center;
-    width: 112.5%;
-    height: 10%;
-    top: 60%;
-    margin: 0 auto;
-    left: -7%;
-  }
-
-  #linkedinB {
-    z-index: 98 !important;
-    position: fixed;
-    left: 15px;
-    top: 100px;
-
-    height: 50px;
-  }
-  #linkedinB:hover,
-  #gitHubB:hover,
-  #varsityTutorsB:hover {
-    transform: scale(1.1);
-  }
-  #gitHubB {
-    z-index: 98 !important;
-    position: fixed;
-    left: 15px;
-    top: 160px;
-
-    height: 50px;
-  }
-  #varsityTutorsB {
-    z-index: 98 !important;
-    position: fixed;
-    left: 15px;
-    top: 220px;
-    height: 50px;
-  }
   #CM {
     position: relative;
     top: 100px;
@@ -644,16 +590,5 @@ body {
     left: 10%;
     right: 10%;
     top: 5%;
-  }
-  #carTable {
-    position: absolute;
-    color: white;
-    background-color: black;
-    width: 80%;
-    left: 10%;
-    right: 10%;
-    text-align: center;
-    justify-self: center;
-    top: 20%;
   }
 }

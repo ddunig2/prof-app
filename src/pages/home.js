@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import Home1 from "../Components/profilecard";
 import Footer from "../Components/footer";
-import { Row, Col, Badge } from "react-bootstrap";
+import { Badge } from "react-bootstrap";
 
 class Home extends Component {
   render() {
     return (
       <div id="homeDiv">
         <div id="Page_container">
-          <h1 id="nameB">Lugduni Desrsiers</h1>
+          <h1 id="nameB">Lugduni Desrosiers</h1>
           <Home1 id="profileCard1" />
           <div id="lang">
             <h2>
@@ -51,7 +51,6 @@ class Home extends Component {
               <br />
               world ready to contribute to those advancements.
             </p>
-            <h1>Quick quotes</h1>
             <q>
               Our greatest glory is not in never falling, but in rising every
               time we fall. — Confucius
@@ -73,7 +72,6 @@ class Home extends Component {
             </q>
           </div>
         </div>
-
         <Footer></Footer>
       </div>
     );

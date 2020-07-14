@@ -25,7 +25,7 @@ class LoanCalculator extends Component {
     var opt = document.getElementById("sel").options[
       document.getElementById("sel").selectedIndex
     ].value;
-    if (opt == "Years") {
+    if (opt === "Years") {
       document.getElementById("lti").placeholder = "Loan term in years";
       if (document.getElementById("lti").value === "") {
       } else {
@@ -59,7 +59,7 @@ class LoanCalculator extends Component {
       var opt = document.getElementById("sel").options[
         document.getElementById("sel").selectedIndex
       ].value;
-      if (opt == "Years") {
+      if (opt === "Years") {
         n *= 12;
       }
 
@@ -80,13 +80,17 @@ class LoanCalculator extends Component {
                 <h2 align="center">
                   <u>Monthly Pay </u>
                 </h2>
-                <h4 align="center" id="monthly" />
+                <h4 align="center" id="monthly">
+                  {" "}
+                </h4>
                 <br />
                 <br />
                 <h2 align="center">
                   <u>Total intrest</u>
                 </h2>
-                <h5 align="center" id="interest" />
+                <h5 align="center" id="interest">
+                  {" "}
+                </h5>
               </Card.Body>
             </Card>
             <div id="loanC1">
