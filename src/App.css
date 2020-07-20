@@ -320,6 +320,13 @@ body {
   padding: 2%;
 }
 
+#cardId {
+  width: 18rem;
+  height: 30rem;
+  margin: 2rem;
+  border-radius: 50px;
+}
+
 #CM {
   position: relative;
   top: 100px;
