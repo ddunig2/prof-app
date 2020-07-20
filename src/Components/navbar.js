@@ -19,15 +19,15 @@ class Navigation extends Component {
             <Nav.Link href={process.env.PUBLIC_URL + "/#/projects"}>
               Projects
             </Nav.Link>
-            <Nav.Link href={process.env.PUBLIC_URL + "/#/loanCalculator"}>
+            <Nav.Link href={process.env.PUBLIC_URL + "/#/open_source"}>
               Open Source Contribution
             </Nav.Link>
 
             <Nav.Link href={process.env.PUBLIC_URL + "/#/full_resume"}>
               Resume
             </Nav.Link>
-            <Nav.Link href={process.env.PUBLIC_URL + "/#/contact_me"}>
-              Contact me
+            <Nav.Link href={process.env.PUBLIC_URL + "/#/find_me"}>
+              Find me
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

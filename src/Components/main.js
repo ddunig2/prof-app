@@ -1,11 +1,11 @@
 import React from "react";
 
 import Home from "../pages/home";
-import LoanCalculator from "../pages/loan_calculator";
+import LoanCalculator from "../pages/open_source";
 import { HashRouter, Switch, Route } from "react-router-dom";
 import projects from "../pages/projects";
 import Experience from "../pages/experience";
-import Contact_me from "../pages/contact_me";
+import Contact_me from "../pages/find_me";
 import Full_resume from "../pages/resume";
 
 const Main = () => (

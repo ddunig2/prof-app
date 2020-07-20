@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Image } from "react-bootstrap";
 
-class Contact_me extends Component {
+class Find_me extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -27,4 +27,4 @@ class Contact_me extends Component {
   }
 }
 
-export default Contact_me;
+export default Find_me;
