@@ -7,7 +7,7 @@ class ProfileCard extends Component {
     return (
       <div id="profileCard1">
         <Card bg="warning" id="profileCard">
-          <Card.Img variant="top" src="profile.jpg" id="profileImg" />
+          <Card.Img variant="top" src="profileC.jpeg" id="profileImg" />
           <Card.Body>
             <Card.Title>St. Thomas Aquinas College</Card.Title>
             <Card.Text>GPA: 3.61</Card.Text>

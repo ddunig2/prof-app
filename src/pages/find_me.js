@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Image } from "react-bootstrap";
+import { Row, Col, Card } from "react-bootstrap";
 
 class Find_me extends Component {
   constructor(props) {
@@ -8,19 +9,49 @@ class Find_me extends Component {
   }
   render() {
     return (
-      <div>
-        <h3 align="center">
-          <Image src="contactme.png" id="CM" />
-        </h3>
-        <div id="con">
-          <div align="center">
-            <Image src="phone.png" id="CMP" />
-            <h1 id="phoneN">845-596-8656</h1>
-          </div>
-          <div align="center">
-            <Image src="email.png" id="CME" />
-            <h1 id="email">duni.dd@gmail.com</h1>
-          </div>
+      <div id="homeDiv">
+        <div id="Page_container">
+          <h1 id="findMeB">Connect</h1>
+          <Row>
+            <Col>
+              <div
+                style={{
+                  textAlign: "center",
+                }}
+              >
+                <img
+                  src="contactIcon.png"
+                  style={{ padding: "2%", maxWidth: "400px" }}
+                />
+              </div>
+            </Col>
+            <Col>
+              <div id="conectDiv" align="center">
+                <h3 id="phoneN" align="left">
+                  <img id="linkedinB" src="phone.jpg" />
+                  Call me
+                </h3>
+              </div>
+              <div id="conectDiv" align="center">
+                <h3 id="email" align="left">
+                  <img id="linkedinB" src="email.svg" />
+                  Email me
+                </h3>
+              </div>
+              <div id="conectDiv" align="center">
+                <h3 id="email" align="left">
+                  <img id="linkedinB" src="linkedin.png" />
+                  Connect via linkedIn
+                </h3>
+              </div>
+              <div id="conectDiv" align="center">
+                <h3 id="email" align="left">
+                  <img id="gitHubB" src="github.png" />
+                  Visit my github repos
+                </h3>
+              </div>
+            </Col>
+          </Row>
         </div>
       </div>
     );

@@ -176,12 +176,9 @@ body {
   box-shadow: 0 4px 16px 0 rgb(204, 4, 4);
 }
 #linkedinB {
-  z-index: 98 !important;
-  position: fixed;
-  left: 15px;
-  top: 100px;
-
-  height: 50px;
+  border-radius: 50%;
+  margin: 5px;
+  height: 70px;
 }
 #linkedinB:hover,
 #gitHubB:hover,
@@ -189,12 +186,9 @@ body {
   transform: scale(1.1);
 }
 #gitHubB {
-  z-index: 98 !important;
-  position: fixed;
-  left: 15px;
-  top: 160px;
-
-  height: 50px;
+  border-radius: 50%;
+  margin: 5px;
+  height: 70px;
 }
 #varsityTutorsB {
   z-index: 98 !important;
@@ -302,6 +296,19 @@ body {
   width: 30%;
   opacity: 0.6;
 }
+#findMeB {
+  font-family: "Times New Roman", Times, serif;
+  position: relative;
+  text-align: center;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  margin: auto;
+  margin-bottom: 50px;
+  top: 15px;
+  width: 40%;
+  opacity: 0.6;
+}
 #lang {
   position: relative;
   text-align: center;
@@ -325,6 +332,18 @@ body {
   height: 30rem;
   margin: 2rem;
   border-radius: 50px;
+}
+
+#opsCard {
+  background-color: khaki;
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#opsCardImg:hover {
+  transform: scale(1.1);
 }
 
 #CM {
@@ -379,6 +398,10 @@ body {
   text-align: center;
   justify-self: center;
   top: 20%;
+}
+
+#conectDiv {
+  margin: 20px;
 }
 
 /* Media queries */

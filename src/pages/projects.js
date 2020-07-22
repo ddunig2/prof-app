@@ -61,7 +61,7 @@ class Projects extends Component {
                 >
                   Loan Calculator
                 </Card.Header>
-                <Card.Img variant="top" src="loancalc2.png" id="expCp" />
+                <Card.Img variant="top" src="loancalc.png" id="expCp" />
                 <Card.Body>
                   <Card.Title>Java</Card.Title>
                   <Card.Text>
