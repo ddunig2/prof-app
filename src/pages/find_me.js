@@ -20,7 +20,7 @@ class Find_me extends Component {
                 }}
               >
                 <img
-                  src="contactIcon.png"
+                  src="ContactIcon.png"
                   style={{ padding: "2%", maxWidth: "400px" }}
                 />
               </div>
@@ -46,7 +46,7 @@ class Find_me extends Component {
               </div>
               <div id="conectDiv" align="center">
                 <h3 id="email" align="left">
-                  <img id="gitHubB" src="github.png" />
+                  <img id="gitHubB" src="gitHub.png" />
                   Visit my github repos
                 </h3>
               </div>
