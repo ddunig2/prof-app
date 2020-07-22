@@ -1,13 +1,13 @@
 {
   "main.css": "/prof-app/static/css/main.07cb09dd.chunk.css",
-  "main.js": "/prof-app/static/js/main.52f24539.chunk.js",
-  "main.js.map": "/prof-app/static/js/main.52f24539.chunk.js.map",
+  "main.js": "/prof-app/static/js/main.e23842e5.chunk.js",
+  "main.js.map": "/prof-app/static/js/main.e23842e5.chunk.js.map",
   "runtime~main.js": "/prof-app/static/js/runtime~main.ee0fda40.js",
   "runtime~main.js.map": "/prof-app/static/js/runtime~main.ee0fda40.js.map",
   "static/js/2.6fdeafa1.chunk.js": "/prof-app/static/js/2.6fdeafa1.chunk.js",
   "static/js/2.6fdeafa1.chunk.js.map": "/prof-app/static/js/2.6fdeafa1.chunk.js.map",
   "index.html": "/prof-app/index.html",
-  "precache-manifest.ffa492860a873bf2e38e6dc5bd850d7d.js": "/prof-app/precache-manifest.ffa492860a873bf2e38e6dc5bd850d7d.js",
+  "precache-manifest.b2e09145efe853dd47414a91a6edc5dd.js": "/prof-app/precache-manifest.b2e09145efe853dd47414a91a6edc5dd.js",
   "service-worker.js": "/prof-app/service-worker.js",
   "static/css/main.07cb09dd.chunk.css.map": "/prof-app/static/css/main.07cb09dd.chunk.css.map"
 }
