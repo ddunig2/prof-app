@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { Image } from "react-bootstrap";
-import { Row, Col, Card } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 class Find_me extends Component {
   constructor(props) {
@@ -21,7 +20,7 @@ class Find_me extends Component {
               >
                 <img
                   src="ContactIcon.png"
-                  style={{ padding: "2%", maxWidth: "400px" }}
+                  style={{ padding: "2%", maxWidth: "300px" }}
                 />
               </div>
             </Col>
