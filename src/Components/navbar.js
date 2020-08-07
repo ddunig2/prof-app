@@ -13,7 +13,7 @@ class Navigation extends Component {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link href={process.env.PUBLIC_URL + "/"}>Home</Nav.Link>
-            <Nav.Link href={process.env.PUBLIC_URL + "/#/experience"}>
+            <Nav.Link href={process.env.PUBLIC_URL + "/#/experiences"}>
               Experience
             </Nav.Link>
             <Nav.Link href={process.env.PUBLIC_URL + "/#/projects"}>

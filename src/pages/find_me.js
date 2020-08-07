@@ -21,33 +21,34 @@ class Find_me extends Component {
                 <img
                   src="ContactIcon.png"
                   style={{ padding: "2%", maxWidth: "300px" }}
+                  alt="L"
                 />
               </div>
             </Col>
             <Col>
               <div id="conectDiv" align="center">
-                <h3 id="phoneN" align="left">
-                  <img id="linkedinB" src="phone.jpg" />
+                <h4 id="phoneN" align="left">
+                  <img id="linkedinB" src="phone.jpg" alt="phone" />
                   Call me
-                </h3>
+                </h4>
               </div>
               <div id="conectDiv" align="center">
-                <h3 id="email" align="left">
-                  <img id="linkedinB" src="email.svg" />
+                <h4 id="email" align="left">
+                  <img id="linkedinB" src="email.svg" alt="email" />
                   Email me
-                </h3>
+                </h4>
               </div>
               <div id="conectDiv" align="center">
-                <h3 id="email" align="left">
-                  <img id="linkedinB" src="linkedin.png" />
+                <h4 id="email" align="left">
+                  <img id="linkedinB" src="linkedin.png" alt="linkedin" />
                   Connect via linkedIn
-                </h3>
+                </h4>
               </div>
               <div id="conectDiv" align="center">
-                <h3 id="email" align="left">
-                  <img id="gitHubB" src="gitHub.png" />
+                <h4 id="email" align="left">
+                  <img id="gitHubB" src="gitHub.png" alt="github" />
                   Visit my github repos
-                </h3>
+                </h4>
               </div>
             </Col>
           </Row>

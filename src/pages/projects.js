@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Row, Col, Card } from "react-bootstrap";
 import Footer from "../Components/footer";
+import Project from "../Components/Project";
 
 class Projects extends Component {
   constructor(props) {

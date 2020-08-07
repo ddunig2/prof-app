@@ -1,10 +1,26 @@
 import React, { Component } from "react";
+import { OSProject, OSContribution } from "../Components/OpenSource";
 import Footer from "../Components/footer";
+import "../OsStyle.css";
 
 class Open_source extends Component {
   render() {
     return (
       <div id="pdiv">
+        <OSProject name="Jabref" image="jabref1.png" link="a">
+          <OSContribution issue="issue" link="a"></OSContribution>
+          <OSContribution issue="issue" link="a"></OSContribution>
+          <OSContribution issue="issue" link="a"></OSContribution>
+        </OSProject>
+        <OSProject name="RxJava" image="rxjava.png" link="a">
+          <OSContribution issue="issue" link="a"></OSContribution>
+          <OSContribution issue="issue" link="a"></OSContribution>
+        </OSProject>
+        <OSProject name="RxJava" image="rxjava.png" link="a">
+          <OSContribution issue="issue" link="a"></OSContribution>
+          <OSContribution issue="issue" link="a"></OSContribution>
+        </OSProject>
+        <Footer></Footer>
         {/*<div id="opsCard">
           <img
             id="opsCardImg"
