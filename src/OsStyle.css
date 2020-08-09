@@ -16,16 +16,9 @@
 #heading {
   height: 80px;
   background-color: white;
-  position: relaative;
+  position: relative;
   box-shadow: 0px 5px 20px 5px black;
   margin-bottom: 0px;
-}
-
-#heading:hover {
-  transform: scale(1.01);
-}
-#heading:active {
-  transform: scale(0.99, 0.9);
 }
 
 #leftbar {
@@ -34,14 +27,29 @@
   left: 0px;
   background-color: green;
 }
-
-#issue {
-  background-color: lightblue;
+#leftbar:hover {
+  animation-name: openLeftB;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+#leftbar:active {
+  transform: scale(0.99, 0.99);
 }
 
-#pr {
-  background-color: lightcoral;
-  margin: 2%;
+a {
+  margin: 5%;
+  font-weight: bold;
+}
+
+a:link {
+  color: blue;
+}
+
+/* mouse over link */
+a:hover {
+  color: purple;
+  text-decoration: none;
+  transform: scale(1.1);
 }
 
 #desc {
@@ -68,6 +76,15 @@
   animation-fill-mode: forwards;
   opacity: 0;
   transition: visibility 0s 0.2s, opacity 0.2s linear;
+}
+
+@keyframes openLeftB {
+  from {
+    width: 3%;
+  }
+  to {
+    width: 7%;
+  }
 }
 
 @keyframes openDesc {
@@ -99,5 +116,10 @@
 @media screen and (max-width: 1000px) {
   #osp {
     width: 80%;
+  }
+}
+@media screen and (max-width: 400px) {
+  #flexDiv {
+    flex-direction: column;
   }
 }

@@ -41,22 +41,24 @@ class OSContribution extends Component {
   render() {
     return (
       <div id="osc">
-        <Row id="heading" onClick={this.clickedHeading}>
-          <div id="leftbar"></div>
+        <Row id="heading">
+          <div id="leftbar" onClick={this.clickedHeading}></div>
+          <h7 style={{ margin: "auto" }}>{this.props.heading}</h7>
           <div
+            id="flexDiv"
             style={{
               height: "100%",
-              width: "97%",
+              right: "0%",
               display: "flex",
               justifyContent: "flex-end",
               alignItems: "center",
             }}
           >
-            <a href="https://www.google.com/" target="_blank" id="issue">
-              issue#309
+            <a href={this.props.pullLink} target="_blank" id="issue">
+              {this.props.issue}
             </a>
-            <a id="pr" href="https://www.google.com/" target="_blank">
-              pull-request#309
+            <a id="pr" href={this.props.pullLink} target="_blank">
+              {this.props.pull}
             </a>
           </div>
         </Row>

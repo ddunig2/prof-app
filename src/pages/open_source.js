@@ -8,9 +8,20 @@ class Open_source extends Component {
     return (
       <div id="pdiv">
         <OSProject name="Jabref" image="jabref1.png" link="a">
-          <OSContribution issue="issue" link="a"></OSContribution>
-          <OSContribution issue="issue" link="a"></OSContribution>
-          <OSContribution issue="issue" link="a"></OSContribution>
+          <OSContribution
+            heading="UI Enhancement"
+            issue="issue#5479"
+            issueLink="https://github.com/JabRef/jabref/issues/5479"
+            pull="pull#5789"
+            pullLink="https://github.com/JabRef/jabref/pull/5789"
+          ></OSContribution>
+          <OSContribution
+            heading="UI Enhancement"
+            issue="issue#5479"
+            issueLink="https://github.com/JabRef/jabref/issues/5479"
+            pull="pull#5789"
+            pullLink="https://github.com/JabRef/jabref/pull/5789"
+          ></OSContribution>
         </OSProject>
         <OSProject name="RxJava" image="rxjava.png" link="a">
           <OSContribution issue="issue" link="a"></OSContribution>
