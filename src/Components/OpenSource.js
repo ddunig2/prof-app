@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Row, Col, Card } from "react-bootstrap";
 import "../OsStyle.css";
 
 class OSProject extends Component {
@@ -30,7 +31,6 @@ class OSContribution extends Component {
   }
 
   clickedHeading = () => {
-    console.log(document.getElementById("desc").offsetWidth);
     if (this.state.desc === "desc" || this.state.desc === "descC") {
       this.setState({ desc: "descO" });
     } else {
@@ -41,9 +41,25 @@ class OSContribution extends Component {
   render() {
     return (
       <div id="osc">
-        <div id="heading" onClick={this.clickedHeading}>
+        <Row id="heading" onClick={this.clickedHeading}>
           <div id="leftbar"></div>
-        </div>
+          <div
+            style={{
+              height: "100%",
+              width: "97%",
+              display: "flex",
+              justifyContent: "flex-end",
+              alignItems: "center",
+            }}
+          >
+            <a href="https://www.google.com/" target="_blank" id="issue">
+              issue#309
+            </a>
+            <a id="pr" href="https://www.google.com/" target="_blank">
+              pull-request#309
+            </a>
+          </div>
+        </Row>
         <div id={this.state.desc}>
           sdfasfd asdf asdfasdfasdfa
           <br></br>sdfasdfasdfasdfasdfasdfasdfa sdfasdfasdf <br></br>
