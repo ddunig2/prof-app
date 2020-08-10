@@ -10,26 +10,34 @@ class Open_source extends Component {
         <OSProject name="Jabref" image="jabref1.png" link="a">
           <OSContribution
             heading="UI Enhancement"
-            issue="issue#5479"
-            issueLink="https://github.com/JabRef/jabref/issues/5479"
-            pull="pull#5789"
-            pullLink="https://github.com/JabRef/jabref/pull/5789"
+            issue="issue#6639"
+            issueLink="https://github.com/JabRef/jabref/issues/6639"
+            pull="pull#6719"
+            pullLink="https://github.com/JabRef/jabref/pull/6719"
           ></OSContribution>
           <OSContribution
             heading="UI Enhancement"
             issue="issue#5479"
             issueLink="https://github.com/JabRef/jabref/issues/5479"
-            pull="pull#5789"
+            pull="pull#5489"
             pullLink="https://github.com/JabRef/jabref/pull/5789"
           ></OSContribution>
         </OSProject>
         <OSProject name="RxJava" image="rxjava.png" link="a">
-          <OSContribution issue="issue" link="a"></OSContribution>
-          <OSContribution issue="issue" link="a"></OSContribution>
-        </OSProject>
-        <OSProject name="RxJava" image="rxjava.png" link="a">
-          <OSContribution issue="issue" link="a"></OSContribution>
-          <OSContribution issue="issue" link="a"></OSContribution>
+          <OSContribution
+            heading="Test Failure"
+            issue="issue#7001"
+            issueLink="https://github.com/ReactiveX/RxJava/issues/7001"
+            pull="pull#7028"
+            pullLink="https://github.com/ReactiveX/RxJava/pull/7028"
+          ></OSContribution>
+          <OSContribution
+            heading="Backporting"
+            issue="issue#5479"
+            issueLink="https://github.com/JabRef/jabref/issues/5479"
+            pull="pull#5789"
+            pullLink="https://github.com/JabRef/jabref/pull/5789"
+          ></OSContribution>
         </OSProject>
         <Footer></Footer>
         {/*<div id="opsCard">

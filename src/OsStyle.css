@@ -26,11 +26,10 @@
   width: 3%;
   left: 0px;
   background-color: green;
+  transition: all 0.3s;
 }
 #leftbar:hover {
-  animation-name: openLeftB;
-  animation-duration: 0.3s;
-  animation-fill-mode: forwards;
+  width: 7%;
 }
 #leftbar:active {
   transform: scale(0.99, 0.99);
@@ -49,7 +48,6 @@ a:link {
 a:hover {
   color: purple;
   text-decoration: none;
-  transform: scale(1.1);
 }
 
 #desc {
@@ -78,13 +76,20 @@ a:hover {
   transition: visibility 0s 0.2s, opacity 0.2s linear;
 }
 
-@keyframes openLeftB {
-  from {
-    width: 3%;
-  }
-  to {
-    width: 7%;
-  }
+#arrowImg {
+  margin: 0 auto;
+}
+
+#AFaceRight {
+  animation-name: AFaceRightA;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+#AFaceDown {
+  animation-name: AFaceDownA;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes openDesc {
@@ -113,13 +118,34 @@ a:hover {
   }
 }
 
+@keyframes AFaceRightA {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes AFaceDownA {
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
 @media screen and (max-width: 1000px) {
   #osp {
     width: 80%;
+  }
+  #leftbar {
+    width: 7%;
   }
 }
 @media screen and (max-width: 400px) {
   #flexDiv {
     flex-direction: column;
+  }
+  #leftbar {
+    width: 7%;
   }
 }

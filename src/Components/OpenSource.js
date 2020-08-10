@@ -27,6 +27,7 @@ class OSContribution extends Component {
     super(props);
     this.state = {
       desc: "desc",
+      arrowImg: "arrowImg",
     };
   }
 
@@ -36,14 +37,31 @@ class OSContribution extends Component {
     } else {
       this.setState({ desc: "descC" });
     }
+
+    if (
+      this.state.arrowImg === "arrowImg" ||
+      this.state.arrowImg === "AFaceRight"
+    ) {
+      this.setState({ arrowImg: "AFaceDown" });
+    } else {
+      this.setState({ arrowImg: "AFaceRight" });
+    }
   };
 
   render() {
     return (
       <div id="osc">
         <Row id="heading">
-          <div id="leftbar" onClick={this.clickedHeading}></div>
-          <h7 style={{ margin: "auto" }}>{this.props.heading}</h7>
+          <div id="leftbar" onClick={this.clickedHeading}>
+            <img
+              id={this.state.arrowImg}
+              src="arrowRight.png"
+              alt="R"
+              width="100%"
+              height="50%"
+            ></img>
+          </div>
+          <h6 style={{ margin: "auto" }}>{this.props.heading}</h6>
           <div
             id="flexDiv"
             style={{
